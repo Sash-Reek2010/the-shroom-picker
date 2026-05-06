@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d3c3a4nrrlt3"]
+
+[ext_resource type="Texture2D" uid="uid://bkdg1tladmrv" path="res://Sprites/enoki.png" id="1_0f7a8"]
+[ext_resource type="Script" uid="uid://c7x5twqoymqr3" path="res://Scripts/score.gd" id="1_hnwbn"]
+
+[node name="Score" type="Label" unique_id=228804735]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0"
+script = ExtResource("1_hnwbn")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=36341711]
+layout_mode = 0
+offset_left = 56.0
+offset_top = -4.0
+offset_right = 120.0
+offset_bottom = 60.0
+texture = ExtResource("1_0f7a8")

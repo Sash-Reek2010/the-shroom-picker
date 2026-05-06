@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://do7l2xgqn3t5g"]
+
+[ext_resource type="Texture2D" uid="uid://bkdg1tladmrv" path="res://Sprites/enoki.png" id="1_0gkwl"]
+[ext_resource type="Script" uid="uid://du2df5kihv2hf" path="res://Scripts/enoki.gd" id="1_mjilp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjilp"]
+size = Vector2(59, 58)
+
+[node name="enoki" type="Area2D" unique_id=94851522]
+script = ExtResource("1_mjilp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=778855016]
+texture = ExtResource("1_0gkwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1825961191]
+position = Vector2(-2.5, 0)
+shape = SubResource("RectangleShape2D_mjilp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
