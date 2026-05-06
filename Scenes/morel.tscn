@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://e30hdqfcd7p6"]
+
+[ext_resource type="Script" uid="uid://djkbu1yrnyq7l" path="res://Scripts/morel.gd" id="1_cqubd"]
+[ext_resource type="Texture2D" uid="uid://cdhggpq5ixauu" path="res://Sprites/morel.png" id="2_oumqu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smiy5"]
+size = Vector2(60, 64)
+
+[node name="morel" type="Area2D" unique_id=251394059]
+script = ExtResource("1_cqubd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1827311680]
+texture = ExtResource("2_oumqu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1344021543]
+position = Vector2(-3, -2)
+shape = SubResource("RectangleShape2D_smiy5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -20,5 +20,4 @@ position = Vector2(14, 15.5)
 shape = SubResource("RectangleShape2D_vgqql")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=296190793]
-position_smoothing_enabled = true
 position_smoothing_speed = 6.0

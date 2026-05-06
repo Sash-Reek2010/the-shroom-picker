@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://du2df5kihv2hf" path="res://Scripts/enoki.gd" id="1_mjilp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjilp"]
-size = Vector2(59, 58)
+size = Vector2(64, 64)
 
 [node name="enoki" type="Area2D" unique_id=94851522]
 script = ExtResource("1_mjilp")
@@ -13,7 +13,7 @@ script = ExtResource("1_mjilp")
 texture = ExtResource("1_0gkwl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1825961191]
-position = Vector2(-2.5, 0)
+position = Vector2(-3, 0)
 shape = SubResource("RectangleShape2D_mjilp")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

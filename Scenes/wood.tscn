@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cw66llnjsn6eo"]
+
+[ext_resource type="Script" uid="uid://dry76r520eao7" path="res://Scripts/wood.gd" id="1_tfydv"]
+[ext_resource type="Texture2D" uid="uid://bxkko6uulaa3t" path="res://Sprites/wood ear.png" id="2_gkese"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vtod"]
+size = Vector2(58, 51)
+
+[node name="wood" type="Area2D" unique_id=921355141]
+script = ExtResource("1_tfydv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1260727091]
+texture = ExtResource("2_gkese")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2087546995]
+position = Vector2(-1, 6.5)
+shape = SubResource("RectangleShape2D_4vtod")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

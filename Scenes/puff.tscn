@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cxcvxc2tv0sy6"]
+
+[ext_resource type="Script" uid="uid://dae6co4b7wpyp" path="res://Scripts/puff.gd" id="1_6p60y"]
+[ext_resource type="Texture2D" uid="uid://cwviv6g2jbwn4" path="res://Sprites/puffball.png" id="2_nbwip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f80f8"]
+size = Vector2(61, 62)
+
+[node name="puff" type="Area2D" unique_id=117005495]
+script = ExtResource("1_6p60y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=170416269]
+texture = ExtResource("2_nbwip")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1357572334]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_f80f8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

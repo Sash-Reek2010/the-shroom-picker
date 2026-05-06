@@ -9,23 +9,22 @@ const scorescene = preload("res://Scenes/score.tscn")
 		# load our little score label node - "const" because we don't need to change this value
 
 	# also preload the images you want to use as icons here:
-const icon1 = preload("res://Sprites/enoki.png")	# just usin the default godot icon here :sob:
+const icon1 = preload("res://Sprites/enoki.png")
+const icon2 = preload("res://Sprites/wood ear.png")
+const icon3 = preload("res://Sprites/puffball.png")
+const icon4 = preload("res://Sprites/morel.png")
 					
 var scores = [
-	["enoki", "5", icon1, Vector2(0, 100)]
+	["enoki", "0", icon1, Vector2(0,-285)],
+	["wood", "0", icon2, Vector2(150,-285)],
+	["puff", "0", icon3, Vector2(300,-285)],
+	["morel", "0", icon4, Vector2(450,-285)]
 		
 	]
-		# ok so this is where we put all the scores we want to track, along with the score we want them
-		# to start at, the image we want them to have, and the coordinates we want to put them at.
-		# make sure you give each label a different position!! unless you really want them to overlap?
-		# you can have them along the top, under the player (like i have them), one in each corner,
-		# or even randomly scattered if you want that to make your game extra unique!!
-
 var score_labels = []
 		# this is where we'll be putting all of our instantiated score nodes,
 		# just to save them for when we need to refer to them
 		# (for example to check if we have enough of a certain item)
-
 func _ready() -> void:
 		for score in scores:
 			var score_label = scorescene.instantiate()
