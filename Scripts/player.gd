@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 350.0
+var speed = 450.0
 	# choose a speed - i'm lowk checking if you're reading the code here,
 	# you should change this value so your player moves faster!!
 
