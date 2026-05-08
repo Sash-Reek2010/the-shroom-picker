@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 450.0
+var speed =300.0
 	# choose a speed - i'm lowk checking if you're reading the code here,
 	# you should change this value so your player moves faster!!
 
@@ -13,7 +13,7 @@ const icon1 = preload("res://Sprites/enoki.png")
 const icon2 = preload("res://Sprites/wood ear.png")
 const icon3 = preload("res://Sprites/puffball.png")
 const icon4 = preload("res://Sprites/morel.png")
-					
+
 var scores = [
 	["enoki", "0", icon1, Vector2(0,-285)],
 	["wood", "0", icon2, Vector2(150,-285)],

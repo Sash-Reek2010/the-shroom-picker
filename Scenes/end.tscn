@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bwbfmnda8h4ag"]
+
+[ext_resource type="Script" uid="uid://ysx2ghu80e1v" path="res://Scripts/end.gd" id="1_5j2cu"]
+
+[node name="End" type="CanvasLayer" unique_id=1109982459]
+script = ExtResource("1_5j2cu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1507271238]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.31764707)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1612125158]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1311124829]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "                   Mushrooms Collected: 0"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=145295093]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "QUIT"
